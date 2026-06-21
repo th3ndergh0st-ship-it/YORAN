@@ -3,259 +3,130 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Yoran Bot — Legal</title>
+  <title>Yoran Bot — Home</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      background: #0f0f1a;
-      color: #e0e0e0;
-      font-family: 'Segoe UI', sans-serif;
-      line-height: 1.7;
-    }
-    header {
-      background: #1a1a2e;
-      border-bottom: 2px solid #7b2fbe;
-      padding: 2rem;
-      text-align: center;
-    }
-    header h1 { font-size: 2rem; color: #a855f7; }
-    header p  { color: #888; margin-top: 0.4rem; }
-    nav {
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      background: #16213e;
-      padding: 1rem;
-      position: sticky;
-      top: 0;
-      z-index: 10;
-      border-bottom: 1px solid #2a2a4a;
-    }
-    nav a {
-      color: #a855f7;
-      text-decoration: none;
-      font-weight: 600;
-      font-size: 0.95rem;
-      transition: color 0.2s;
-    }
-    nav a:hover { color: #d8b4fe; }
-    main {
-      max-width: 860px;
-      margin: 3rem auto;
-      padding: 0 1.5rem;
-    }
-    section {
-      background: #1a1a2e;
-      border: 1px solid #2a2a4a;
-      border-radius: 12px;
-      padding: 2.5rem;
-      margin-bottom: 3rem;
-    }
-    section h2 {
-      font-size: 1.6rem;
-      color: #a855f7;
-      margin-bottom: 1.5rem;
-      border-bottom: 1px solid #2a2a4a;
-      padding-bottom: 0.75rem;
-    }
-    section h3 {
-      font-size: 1.05rem;
-      color: #c4b5fd;
-      margin: 1.5rem 0 0.5rem;
-    }
-    section p  { margin-bottom: 0.75rem; color: #ccc; }
-    section ul { padding-left: 1.5rem; margin-bottom: 0.75rem; color: #ccc; }
-    section ul li { margin-bottom: 0.3rem; }
+    body { background: #0f0f1a; color: #e0e0e0; font-family: 'Segoe UI', sans-serif; line-height: 1.7; }
+    header { background: #1a1a2e; border-bottom: 2px solid #7b2fbe; padding: 2.5rem 2rem; text-align: center; }
+    header h1 { font-size: 2.2rem; color: #a855f7; }
+    header p { color: #888; margin-top: 0.4rem; font-size: 1rem; }
+    nav { display: flex; justify-content: center; gap: 2rem; background: #16213e; padding: 1rem; position: sticky; top: 0; z-index: 10; border-bottom: 1px solid #2a2a4a; }
+    nav a { color: #a855f7; text-decoration: none; font-weight: 600; font-size: 0.95rem; transition: color 0.2s; }
+    nav a:hover, nav a.active { color: #d8b4fe; }
+    main { max-width: 860px; margin: 3rem auto; padding: 0 1.5rem; }
+    .card { background: #1a1a2e; border: 1px solid #2a2a4a; border-radius: 12px; padding: 2.5rem; margin-bottom: 2rem; }
+    .card h2 { font-size: 1.5rem; color: #a855f7; margin-bottom: 1.2rem; padding-bottom: 0.75rem; border-bottom: 1px solid #2a2a4a; }
+    .card h3 { font-size: 1.05rem; color: #c4b5fd; margin: 1.4rem 0 0.5rem; }
+    .card p { margin-bottom: 0.75rem; color: #ccc; }
+    .card ul { padding-left: 1.5rem; margin-bottom: 0.75rem; color: #ccc; }
+    .card ul li { margin-bottom: 0.4rem; }
+    .feature-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; margin-top: 1rem; }
+    .feature { background: #0f0f1a; border: 1px solid #2a2a4a; border-radius: 8px; padding: 1.2rem; }
+    .feature .icon { font-size: 1.8rem; margin-bottom: 0.5rem; }
+    .feature h4 { color: #c4b5fd; margin-bottom: 0.3rem; font-size: 0.95rem; }
+    .feature p { font-size: 0.88rem; color: #999; margin: 0; }
+    .badge { display: inline-block; background: #7b2fbe22; border: 1px solid #7b2fbe; color: #c4b5fd; border-radius: 6px; padding: 0.2rem 0.7rem; font-size: 0.8rem; margin-bottom: 1rem; }
+    .highlight { background: #7b2fbe18; border-left: 3px solid #7b2fbe; border-radius: 0 8px 8px 0; padding: 1rem 1.2rem; margin: 1rem 0; color: #ccc; font-size: 0.95rem; }
     a { color: #a855f7; }
-    .badge {
-      display: inline-block;
-      background: #7b2fbe22;
-      border: 1px solid #7b2fbe;
-      color: #c4b5fd;
-      border-radius: 6px;
-      padding: 0.2rem 0.7rem;
-      font-size: 0.8rem;
-      margin-bottom: 1rem;
-    }
-    footer {
-      text-align: center;
-      color: #555;
-      padding: 2rem;
-      font-size: 0.85rem;
-      border-top: 1px solid #2a2a4a;
-    }
+    footer { text-align: center; color: #555; padding: 2rem; font-size: 0.85rem; border-top: 1px solid #2a2a4a; }
   </style>
 </head>
 <body>
 
 <header>
   <h1>⚔️ Yoran Bot</h1>
-  <p>Discord bot for Roblox complex systems shop communities</p>
+  <p>A Discord bot for Roblox complex systems shop communities</p>
 </header>
 
 <nav>
-  <a href="#home">Home</a>
-  <a href="#privacy">Privacy Policy</a>
-  <a href="#terms">Terms of Service</a>
+  <a href="index.html" class="active">🏠 Home</a>
+  <a href="privacy.html">🔒 Privacy Policy</a>
+  <a href="terms.html">📜 Terms of Service</a>
 </nav>
 
 <main>
 
-  <!-- HOME -->
-  <section id="home">
-    <h2>🏠 Home</h2>
+  <div class="card">
+    <h2>🏠 About Yoran Bot</h2>
     <p>
-      <strong>Yoran Bot</strong> is a Discord bot built for Roblox complex systems shop communities.
-      It provides moderation tools, a ticket system, YouTube subscription verification,
-      automatic role management, and announcement utilities.
+      <strong>Yoran Bot</strong> is a Discord bot developed for Roblox complex systems shop servers.
+      It provides server management tools, a support ticket system, automated role management,
+      community utilities, and YouTube subscription verification to grant access to exclusive content.
     </p>
     <p>
-      The bot uses Google OAuth 2.0 (Device Authorization Flow) to verify that users
-      are subscribed to the associated YouTube channel before granting access to
-      exclusive content channels.
+      This bot is deployed on private Discord servers and is not a public application available to all users.
+      Its purpose is to enhance the moderation and purchasing experience within a specific Roblox shop community.
     </p>
-    <h3>Contact</h3>
-    <p>Email: <a href="mailto:th3ndergh0st@gmail.com">th3ndergh0st@gmail.com</a></p>
-  </section>
+    <div class="highlight">
+      <strong>YouTube Verification:</strong> Yoran Bot uses Google OAuth 2.0 (Device Authorization Flow)
+      to verify that a Discord user is subscribed to our YouTube channel. This is the only time user data
+      from Google is accessed. We only request read-only access to subscription data and do not store any tokens or personal information.
+    </div>
+  </div>
 
-  <!-- PRIVACY POLICY -->
-  <section id="privacy">
-    <h2>🔒 Privacy Policy</h2>
-    <span class="badge">Last updated: June 20, 2026</span>
+  <div class="card">
+    <h2>⚡ Features</h2>
+    <div class="feature-grid">
+      <div class="feature">
+        <div class="icon">🔨</div>
+        <h4>Moderation</h4>
+        <p>Ban, kick, timeout, warn, purge, lock channels and manage roles via slash commands.</p>
+      </div>
+      <div class="feature">
+        <div class="icon">🎫</div>
+        <h4>Ticket System</h4>
+        <p>Users open support tickets through a form. Staff can claim, close, and add users.</p>
+      </div>
+      <div class="feature">
+        <div class="icon">🎬</div>
+        <h4>YouTube Verification</h4>
+        <p>Verifies YouTube subscriptions via Google OAuth to grant exclusive Discord roles.</p>
+      </div>
+      <div class="feature">
+        <div class="icon">📢</div>
+        <h4>Announcements</h4>
+        <p>Admins post product launches, sales, and updates with rich embeds and images.</p>
+      </div>
+      <div class="feature">
+        <div class="icon">🎉</div>
+        <h4>Giveaways</h4>
+        <p>Create timed giveaways with automatic winner selection and reroll support.</p>
+      </div>
+      <div class="feature">
+        <div class="icon">💡</div>
+        <h4>Community Tools</h4>
+        <p>Suggestion forms, user reports, polls, and member info utilities.</p>
+      </div>
+    </div>
+  </div>
 
-    <h3>1. Introduction</h3>
+  <div class="card">
+    <h2>🔐 Data & Privacy</h2>
     <p>
-      Yoran Bot ("the Bot", "we", "us") is a Discord bot designed for Roblox systems shop
-      communities. This Privacy Policy explains how we collect, use, and protect information
-      when you interact with the Bot on Discord.
+      Yoran Bot is designed with privacy in mind. The only external API we interact with is
+      Google's YouTube Data API v3, and only when a user voluntarily initiates the
+      <code>/verifyyoutube</code> command.
     </p>
-
-    <h3>2. Information We Collect</h3>
-    <p>When you use the <code>!verifyyoutube</code> command, we temporarily access:</p>
     <ul>
-      <li>Your <strong>Discord user ID</strong> — to identify which Discord account to assign a role to</li>
-      <li>Your <strong>YouTube account</strong> — via Google OAuth 2.0 Device Flow, to verify that you are subscribed to our YouTube channel. We only request read-only access to your YouTube subscription data (<code>youtube.readonly</code> scope)</li>
+      <li>We request only <code>youtube.readonly</code> scope — the minimum necessary</li>
+      <li>OAuth access tokens are used once and never stored</li>
+      <li>No personal data is sold, shared, or used for advertising</li>
+      <li>Users can revoke access at any time via their Google account</li>
     </ul>
-    <p>
-      We do <strong>not</strong> collect your email address, password, personal name,
-      YouTube watch history, or any other personal data beyond what is strictly necessary
-      for subscription verification.
-    </p>
+    <p>Read our full <a href="privacy.html">Privacy Policy</a> for complete details.</p>
+  </div>
 
-    <h3>3. How We Use Your Information</h3>
-    <p>The data collected is used exclusively to:</p>
-    <ul>
-      <li>Verify that your YouTube account is subscribed to the designated channel</li>
-      <li>Assign the appropriate Discord role upon successful verification</li>
-    </ul>
-    <p>We do <strong>not</strong> use your data for advertising, analytics, profiling, or any purpose beyond the above.</p>
-
-    <h3>4. Data Retention</h3>
-    <p>
-      We do <strong>not</strong> permanently store any personal data. The OAuth access token
-      obtained during verification is used once to check your subscription status and is
-      immediately discarded. No database stores your YouTube credentials or tokens.
-    </p>
-
-    <h3>5. Data Sharing</h3>
-    <p>
-      We do <strong>not</strong> sell, trade, rent, or share your personal information with
-      any third parties. The only external service we communicate with during verification is
-      Google's YouTube Data API v3, governed by
-      <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a>.
-    </p>
-
-    <h3>6. Google API Services</h3>
-    <p>
-      Yoran Bot's use of information received from Google APIs adheres to the
-      <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank">
-        Google API Services User Data Policy
-      </a>, including the Limited Use requirements.
-    </p>
-
-    <h3>7. Security</h3>
-    <p>
-      All communication with Google's API is performed over HTTPS.
-      Access tokens are never logged or stored permanently.
-    </p>
-
-    <h3>8. Children's Privacy</h3>
-    <p>
-      Yoran Bot is not directed at children under the age of 13.
-      We do not knowingly collect personal information from children.
-    </p>
-
-    <h3>9. Changes to This Policy</h3>
-    <p>
-      We may update this Privacy Policy from time to time. Changes will be reflected
-      by updating the "Last updated" date at the top of this section.
-    </p>
-
-    <h3>10. Contact</h3>
-    <p>Questions? Email us at: <a href="mailto:th3ndergh0st@gmail.com">th3ndergh0st@gmail.com</a></p>
-  </section>
-
-  <!-- TERMS OF SERVICE -->
-  <section id="terms">
-    <h2>📜 Terms of Service</h2>
-    <span class="badge">Last updated: June 20, 2026</span>
-
-    <h3>1. Acceptance</h3>
-    <p>
-      By using Yoran Bot you agree to these Terms of Service and to comply with Discord's
-      <a href="https://discord.com/terms" target="_blank">Terms of Service</a> and
-      <a href="https://discord.com/guidelines" target="_blank">Community Guidelines</a>.
-    </p>
-
-    <h3>2. Use of the Bot</h3>
-    <p>
-      You agree to use Yoran Bot only for its intended purpose within Discord servers.
-      You must not attempt to abuse, exploit, spam, or reverse-engineer the Bot.
-      Misuse may result in being permanently blocked from using the Bot.
-    </p>
-
-    <h3>3. YouTube Verification</h3>
-    <p>
-      By initiating the YouTube verification process, you voluntarily authorize Yoran Bot
-      to read your YouTube subscription data via Google OAuth 2.0 for the sole purpose of
-      verifying your subscription. You may revoke this access at any time through your
-      <a href="https://myaccount.google.com/permissions" target="_blank">Google account permissions</a>.
-    </p>
-
-    <h3>4. Availability</h3>
-    <p>
-      We do not guarantee that the Bot will be available at all times.
-      We reserve the right to modify, suspend, or discontinue the Bot at any time without notice.
-    </p>
-
-    <h3>5. Limitation of Liability</h3>
-    <p>
-      Yoran Bot is provided "as is" without warranties of any kind.
-      We are not liable for any damages arising from the use or inability to use the Bot,
-      including but not limited to loss of data, Discord account issues, or service interruptions.
-    </p>
-
-    <h3>6. Intellectual Property</h3>
-    <p>
-      All code, design, and content related to Yoran Bot are the property of their respective
-      owners. You may not copy, redistribute, or resell the Bot or its components without
-      explicit written permission.
-    </p>
-
-    <h3>7. Changes to Terms</h3>
-    <p>
-      We reserve the right to update these Terms at any time.
-      Continued use of the Bot after changes constitutes acceptance of the new Terms.
-    </p>
-
-    <h3>8. Contact</h3>
-    <p>Questions? Email us at: <a href="mailto:th3ndergh0st@gmail.com">th3ndergh0st@gmail.com</a></p>
-  </section>
+  <div class="card">
+    <h2>📬 Contact</h2>
+    <p>For questions, concerns, or data requests, contact us at:</p>
+    <p><strong>Email:</strong> <a href="mailto:contact@yoranstudio.com">contact@yoranstudio.com</a></p>
+  </div>
 
 </main>
 
 <footer>
-  <p>© 2026 Yoran Bot · All rights reserved · <a href="mailto:th3ndergh0st@gmail.com">th3ndergh0st@gmail.com</a></p>
+  <p>© 2026 Yoran Bot · Yoran Studio · <a href="mailto:contact@yoranstudio.com">contact@yoranstudio.com</a></p>
+  <p style="margin-top:0.4rem;"><a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Service</a></p>
 </footer>
 
 </body>
